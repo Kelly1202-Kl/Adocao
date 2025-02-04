@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Amigo</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home"><button onclick="home">Home</button></a></li>                
+                <li><a href="#doe"><button onclick="home">Doe</button></a></a></li>
+                <li><a href="#adote"><button onclick="home">Adote</button></a></a></li>
+                <li><a href="#contato"><button onclick="home">Contato</button></a></a></li>
+            </ul>
+        </nav>
+        <h1>Instituto Casa-Pet</h1>
+            <input type="text" id="petFilter" placeholder="Filtrar pets..." onkeyup="filterPets()">
+       
+        <p>Encontre seu novo melhor amigo!</p>
+        
+    </header>
+    
+    
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao Instituto Casa-Pet</h2>
+            <p>Nosso objetivo é ajudar animais abandonados a encontrar um lar.</p>
+        </section>
+        <section id="pets">
+            <h2>Nossos Pets Disponíveis</h2></br>
+            <div class="pet-card">
+                <img src="img/1.jpg" alt="Pet 1">
+                <h3>Lua</h3>
+                <p>Filhote carinhoso e brincalhão, adora cochilar e receber carinho.
+                </p>
+                <button onclick="adoptPet('Pet 1')">Adotar</button>
+            </div>
+            <div class="pet-card">
+                <img src="img/2.jpeg" alt="Pet 2">
+                <h3>Tom</h3>
+                <p>Gato esperto e curioso, sempre em busca de aventuras pela casa.</p>
+                <button onclick="adoptPet('Pet 2')">Adotar</button>
+            </div>
+            <div class="pet-card">
+                <img src="img/3.jpeg" alt="Pet 2">
+                <h3>Mila</h3>
+                <p>Cachorrinha dócil e amigável, perfeita para companhia e passeios.
+                </p>
+                <button onclick="adoptPet('Pet 3')">Adotar</button>
+            </div>
+            <div class="pet-card">
+                <img src="img/9.jpeg" alt="Pet 2">
+                <h3>Pompom</h3>
+                <p>Coelhinho fofo e saltitante, adora explorar e comer cenouras.
+                </p>
+                <button onclick="adoptPet('Pet 4')">Adotar</button>
+            </div>
+            <div class="pet-card">
+                <img src="img/6.jpeg" alt="Pet 2">
+                <h3>Rex</h3>
+                <p>Gato imponente e peludo, ama um bom descanso ao sol.
+                </p>
+                <button onclick="adoptPet('Pet 5')">Adotar</button>
+            </div>
+            <div class="pet-card">
+                <img src="img/1.jpeg" alt="Pet 2">
+                <h3>Luke</h3>
+                <p>Cão leal e protetor, ideal para quem busca um grande amigo.
+                </p>
+                <button onclick="adoptPet('Pet 2')">Adotar</button>
+            </div>
+            <div class="pet-card">
+                <img src="img/8.jpeg" alt="Pet 2">
+                <h3>Mia</h3>
+                <p> Gatinha brincalhona e carinhosa, adora perseguir brinquedos.
+                </p>
+                <button onclick="adoptPet('Pet 6')">Adotar</button>
+            </div>
+            <div class="pet-card">
+                <img src="img/10.jpeg" alt="Pet 2">
+                <h3>Juca</h3>
+                <p>Meigo e delicado, sempre curioso sobre tudo ao redor.
+                </p>
+                <button onclick="adoptPet('Pet 7')">Adotar</button>
+            </div>
+            <div class="pet-card">
+                <img src="img/11.jpeg" alt="Pet 2">
+                <h3>Luna</h3>
+                <p>Coelhinha tranquila e observadora, gosta de momentos de paz e carinho
+                </p>
+                <button onclick="adoptPet('Pet 8')">Adotar</button>
+            </div>
+        </section>
+        <section id="doe">
+            <h2>Doe</h2>
+            <p>Ajude-nos a continuar nosso trabalho doando. Sua contribuição faz a diferença!</p>
+            <button onclick="donate()">Doe Agora</button>
+        </section>
+        <section id="adocao">
+            <h2>Formulário de Adoção</h2>
+            <form id="form-adocao">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="animal">Escolha o Animal:</label>
+                <select id="animal" name="animal" required>
+                    <option value="Animal 1">Animal 1</option>
+                    <option value="Animal 2">Animal 2</option>
+                    <option value="Animal 2">Animal 3</option>
+                    <option value="Animal 2">Animal 4</option>
+                    <option value="Animal 2">Animal 5</option>
+                    <option value="Animal 2">Animal 6</option>
+                    <option value="Animal 2">Animal 7</option>
+                    <option value="Animal 2">Animal 8</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+                
+                <button type="submit">Enviar Solicitação</button>
+            </form>
+        </section>
+
+    </main>
+    <section id="Contato">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <textarea id="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Instituto Casa-Pet. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="function.js"></script>
+</body>
+</html>

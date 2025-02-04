@@ -28,3 +28,5 @@ Mostrar na interface apenas os animais selecionada
 # adocao2
 # adocao2
 # adocao2
+# adocao1
+# Adocao
