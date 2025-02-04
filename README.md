@@ -6,7 +6,7 @@ site de adoção de animais, o objetivo é colocar em prática conhecimentos já
 
 Exemplo de Resultado:
 
-![Imagem  do projeto](IMG/tela.png)
+![Imagem  do projeto](tela.png)
 
 
 # Funcionalidades:
