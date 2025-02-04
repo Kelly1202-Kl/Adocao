@@ -24,9 +24,3 @@ Filtro por animais
 Capturar filtro selecionado
 omparar o filtro selecionado com todos os países
 Mostrar na interface apenas os animais selecionada
-# Adocao
-# adocao2
-# adocao2
-# adocao2
-# adocao1
-# Adocao
